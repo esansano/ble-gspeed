@@ -60,7 +60,7 @@ def user_speed_distribution():
     ax0.spines['right'].set_visible(False)
     ax0.set_title('Distribution of speeds recorded by user')
     # ax0.spines['bottom'].set_visible(False)
-    ax0.text(x=-0.4, y=1.9, s='a)', fontweight='bold', fontsize=16)
+    ax0.text(x=-0.4, y=1.9, s='(a)', fontweight='bold', fontsize=16)
 
     ax1.set_xlim(0.5, 13.5)
     ax1.set_ylim(0, 22)
@@ -71,7 +71,7 @@ def user_speed_distribution():
     ax1.spines['top'].set_visible(False)
     ax1.spines['right'].set_visible(False)
     ax1.set_title('Number of walks recorded by user')
-    ax1.text(x=-0.4, y=21, s='b)', fontweight='bold', fontsize=16)
+    ax1.text(x=-0.4, y=21, s='(b)', fontweight='bold', fontsize=16)
 
     ax2.spines['top'].set_visible(False)
     ax2.spines['right'].set_visible(False)
@@ -80,7 +80,7 @@ def user_speed_distribution():
     ax2.set_ylim(0, 15)
     ax2.set_ylabel('# of walks')
     ax2.set_title('Distribution of speeds')
-    ax2.text(x=0.088, y=14, s='c)', fontweight='bold', fontsize=16)
+    ax2.text(x=0.088, y=14, s='(c)', fontweight='bold', fontsize=16)
     # ax1.set_xticks(ticks=[1, 2, 3, 4], minor=False)
     # ax1.set_yticks(ticks=[0, 10, 20, 30, 40, 50], minor=False)
 
@@ -206,7 +206,7 @@ def device_beacon_rssi_distribution():
     ax12.set_yticks(ticks=[0, 10, 20, 30, 40, 50], minor=False)
     ax12.set_xticklabels(devices)
     ax11.set_title('RSSI distribution and scanning rate')
-    ax11.text(x=0.0, y=-30, s='a)', fontweight='bold', fontsize=14)
+    ax11.text(x=0.0, y=-30, s='(a)', fontweight='bold', fontsize=14)
 
     patch_105 = mpatches.Patch(color=bcolors[1])
     patch_plus = mpatches.Patch(color=bcolors[3])
@@ -227,7 +227,7 @@ def device_beacon_rssi_distribution():
     ax22.set_yticks(ticks=[0, 20, 40, 60, 80, 100], minor=False)
     ax22.set_xticklabels(['iBKS 105', 'iBKS plus'])
     ax21.set_title('RSSI distribution and advertising rate')
-    ax21.text(x=-0.17, y=-30, s='b)', fontweight='bold', fontsize=14)
+    ax21.text(x=-0.17, y=-30, s='(b)', fontweight='bold', fontsize=14)
 
     patch_105 = mpatches.Patch(color=bcolors[1])
     patch_plus = mpatches.Patch(color=bcolors[3])
@@ -247,7 +247,7 @@ def device_beacon_rssi_distribution():
     ax32.set_yticks(ticks=np.arange(0, 4.1, .5), minor=False)
     ax32.set_xticklabels([m[:5] for m in UJI_D0])
     ax31.set_title('RSSI distribution and advertising rate for each beacon')
-    ax31.text(x=-0.6, y=-30, s='c)', fontweight='bold', fontsize=14)
+    ax31.text(x=-0.6, y=-30, s='(c)', fontweight='bold', fontsize=14)
 
     plt.show()
 
